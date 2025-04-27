@@ -6,7 +6,7 @@ export function DeleteTrainee() {
     const navigate = useNavigate();
   
     const handleDelete = () => {
-      fetch(`http://localhost:8000/delete-trainee/${id}`, {
+      fetch(`https://training-mng-backend.onrender.com/delete-trainee/${id}`, {
         method: "DELETE",
       })
         .then((response) => {

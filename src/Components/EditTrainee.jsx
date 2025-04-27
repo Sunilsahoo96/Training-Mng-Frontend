@@ -11,7 +11,7 @@ const EditTrainee = () => {
 
   useEffect(() => {
     console.log("Fetching Trainee with ID:", id);
-    fetch(`http://localhost:8000/get-trainee/${id}`)
+    fetch(`https://training-mng-backend.onrender.com/get-trainee/${id}`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);

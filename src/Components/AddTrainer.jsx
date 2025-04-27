@@ -18,7 +18,7 @@ const AddTrainer = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:8000/add-trainer", {
+    fetch("https://training-mng-backend.onrender.com/add-trainer", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),

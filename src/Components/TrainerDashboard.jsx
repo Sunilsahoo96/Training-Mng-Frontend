@@ -5,14 +5,14 @@ const TrainerDashboard = () => {
     const [requests, setRequests] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:8000/trainee-requests")
+        fetch("https://training-mng-backend.onrender.com/trainee-requests")
             .then(res => res.json())
             .then(data => setRequests(data))
             .catch(error => console.error("Error fetching trainee requests:", error));
     }, []);
 
     const handleApproval = async (id, status) => {
-        await fetch(`http://localhost:8000/approve-trainee/${id}`, {
+        await fetch(`https://training-mng-backend.onrender.com/approve-trainee/${id}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ status }) // ✅ No training room selection required

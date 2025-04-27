@@ -10,7 +10,7 @@ const EditTrainer = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/get-trainer/${id}`)
+    fetch(`https://training-mng-backend.onrender.com/get-trainer/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setTrainer(data);

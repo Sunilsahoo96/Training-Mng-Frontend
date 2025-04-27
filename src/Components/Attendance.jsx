@@ -5,7 +5,7 @@ const Attendance = () => {
     const [total, setTotal] = useState(0);
 
     useEffect(() => {
-        fetch("http://localhost:8000/attendance") 
+        fetch("https://training-mng-backend.onrender.com/attendance") 
             .then(res => res.json())
             .then(data => {
                 setTotal(data.attendance);  // ✅ Only update total attendance count

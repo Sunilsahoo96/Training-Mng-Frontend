@@ -14,7 +14,7 @@ const Signin = () => {
     setError(null);
   
     try {
-      const response = await fetch("http://localhost:8000/trainees");
+      const response = await fetch("https://training-mng-backend.onrender.com/trainees");
       const trainees = await response.json();
   
       if (!response.ok) {

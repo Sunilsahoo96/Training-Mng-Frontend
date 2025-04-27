@@ -9,7 +9,7 @@ const Trainee = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8000/get-trainee")
+    fetch("https://training-mng-backend.onrender.com/get-trainee")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch data");

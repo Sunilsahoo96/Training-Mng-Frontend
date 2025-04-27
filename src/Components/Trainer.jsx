@@ -9,7 +9,7 @@ const Trainer = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8000/get-trainer")
+    fetch("https://training-mng-backend.onrender.com/get-trainer")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch data");

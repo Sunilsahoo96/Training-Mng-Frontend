@@ -13,7 +13,7 @@ const TraineeRequestForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         
-        const response = await fetch("http://localhost:8000/request-trainee", 
+        const response = await fetch("https://training-mng-backend.onrender.com/request-trainee", 
             {
             method: "POST",
             headers: { "Content-Type": "application/json" },
